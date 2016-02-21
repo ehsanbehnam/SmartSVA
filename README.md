@@ -1,7 +1,8 @@
 # SmartSVA
 SmartSVA introduces an improved Surrogate Variable Analysis algorithm that
 automatically captures salient features from data in the presence of confounding factors.
-Comparing to the popular SVA algorithm, SmartSVA works 10 times faster.
+SmartSVA proposes a revision on the popular SVA algorithm and on average achieves 10 times
+faster running time while trading no accuracy loss in return.
 
 Installing Dependencies
 =======================
