@@ -107,7 +107,7 @@ df <- data.frame(pred=gl(2, 100))
 
 # Determine the number of SVs
 Y.r <- t(resid(lm(t(Y) ~ pred, data=df)))
-# Add one to be conservative
+# Add one to compensate potential loss of 1 degree of freedom in confounded scenarios
 n.sv <- EstDimRMT(Y.r, FALSE)$dim + 1
 mod <- model.matrix( ~ pred, df)
 sv.obj <- smartsva(Y, mod, mod0=NULL, n.sv=n.sv)
